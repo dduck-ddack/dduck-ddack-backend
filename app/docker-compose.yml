@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  app:
+  api:
     build: .
-    container_name: my-fastapi-app
+    container_name: fastcampus-ai
     ports:
-      - "80:8000"  # 외부 80포트로 들어오면 -> 내부 8000포트로 연결
-    restart: always # 서버 재부팅되면 자동 실행
+      - "80:8000"  # 외부(80) -> 내부(8000) 연결
     env_file:
-      - .env        # 환경변수 파일 연동
+      - .env       # 환경변수 파일 연결
+    restart: always

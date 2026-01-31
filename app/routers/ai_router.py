@@ -1,7 +1,5 @@
-import torch
+
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
-from typing import Optional
 from app.schema.MessageTransform import MessageTransformRequest, MessageTransformResponse
 from app.service import transfer_service
 

@@ -1,4 +1,4 @@
-from contextlib import asynccontextmanager
+# from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from app.routers import ai_router, test_router
 # from app.core.database import init_vector_extension
